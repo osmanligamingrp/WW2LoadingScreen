@@ -1,95 +1,154 @@
-﻿/*    _           _    _                     _ 
+﻿/*
+--------------------------------------
+--------LEAKED BY ANONYMOUS LEAKR --------------
+----------------------------------------
+      _           _    _                     _ 
      | |         | |  | |                   | |
   ___| | ___  ___| | _| |     ___   __ _  __| |
  / __| |/ _ \/ _ \ |/ / |    / _ \ / _` |/ _` |
  \__ \ |  __/  __/   <| |___| (_) | (_| | (_| |
  |___/_|\___|\___|_|\_\______\___/ \__,_|\__,_|
-    Tutoriel par MrPikou / Abonnez-Vous !
+    version 2.04
+	
+--------------------------------------
+--------LEAKED BY ANONYMOUS LEAKR --------------
+----------------------------------------	
 */
 
-/* Chemin d'accès à votre logo
-NE PAS CHANGER */
+/*URL for the server logo
+Leave it blank to use text instead*/
 var l_serverImage = "images/logo.png";
 
-/* Nom de Votre serveur
-Changez le nom de votre serveur en dessous :*/
-var l_serverName = "[Nom de Votre Serveur]";
+/*Custom server name configuration
+Leave it blank for automatic server name*/
+var l_serverName = "sleekLoad 2";
 
-/* Utiliser une vidéo en fond
-NE PAS CHANGER */
+/*Use a video for the background?
+Otherwise it will just use images*/
 var l_bgVideo = false;
 
-/* Images de Fond
-Placez 5 Images ! */
+/*Video background
+Avaiable options:
+"backgrounds/videos/aurora.webm"
+"backgrounds/videos/bluefall.webm"
+"backgrounds/videos/bluetilefloor.webm"
+"backgrounds/videos/bluewhitecircles.webm"
+"backgrounds/videos/bokehlens.webm"
+"backgrounds/videos/cleanbokeh.webm"
+"backgrounds/videos/coldnight.webm"
+"backgrounds/videos/colorfulburst.webm"
+"backgrounds/videos/dancingstars.webm"
+"backgrounds/videos/dropsflares.webm"
+"backgrounds/videos/focusorangebokeh.webm"
+"backgrounds/videos/glimmering.webm"
+"backgrounds/videos/glowingrings.webm"
+"backgrounds/videos/greencircles.webm"
+"backgrounds/videos/hues.webm"
+"backgrounds/videos/inthedeep.webm"
+"backgrounds/videos/modernflourish.webm"
+"backgrounds/videos/orangeaura.webm"
+"backgrounds/videos/warminside.webm"
+"backgrounds/videos/yellowgreen.webm"
+
+You can add custom backgrounds
+Just make sure it is at webm VP8 format */
+var l_background = "backgrounds/videos/glimmering.webm";
+
+/*(Image-background only)
+Place one or more images
+Multiple images will automatically shuffle between them*/
 var l_bgImages = [
-	"backgrounds/images/fond1.jpg",
-	"backgrounds/images/fond2.jpg",
-	"backgrounds/images/fond3.jpg",
-	"backgrounds/images/fond4.jpg",
-	"backgrounds/images/fond5.jpg"
+	"backgrounds/images/touhou01.jpg",
+	"backgrounds/images/touhou02.jpg",
+	"backgrounds/images/touhou03.jpg",
+	"backgrounds/images/touhou03.jpg",
+	"backgrounds/images/touhou04.jpg",
+	"backgrounds/images/touhou05.jpg",
+	"backgrounds/images/touhou06.jpg",
+	"backgrounds/images/touhou07.jpg",
+	"backgrounds/images/touhou08.jpg",
+	"backgrounds/images/touhou09.jpg",
+	"backgrounds/images/touhou10.jpg",
 ];
 
-/* Images dans le Désordre ? ( "True" pour Oui / "False" pour Non )*/
+/*Random background images order?*/
 var l_bgImagesRandom = true;
 
-/* Delai ( millisecondes ) entre les images
-NE PAS CHANGER */
-var l_bgImageDuration = 3000;
+/*(Image-background only)
+Delay between background images changes
+in milliseconds*/
+var l_bgImageDuration = 5000;
 
-/* Durée ( millisecondes ) de la transition entre les images*/
+/*(Image-background only)
+Image background fade velocity
+in milliseconds*/
 var l_bgImageFadeVelocity = 2000;
 
-/* Mettre des images de fond ? ( "True" pour Oui / "False" pour Non )*/
+/*Enable background overlay?*/
 var l_bgOverlay = true;
 
-/* Pourcentage de "points noirs" sur les images de fond :*/
+/*Background darkening amount
+0 for none (0%), 100 for pitch black (100%)*/
 var l_bgDarkening = 50;
 
-/* Musique
-Activer la musique en fond ? ( "True" pour Oui / "False" pour Non )*/
+/*Music player
+'true' or 'false' to enable music in the background*/
 var l_music = true;
 
-/*Montrer le nom de la musique ? ( "True" pour Oui / "False" pour Non )*/
+/*Display actual song's name?*/
 var l_musicDisplay = true;
 
-/*Playlist musicale
-Placez les musiques que vous souhaitez après "ogg:" et leur nom après "name:"*/
+/*Music playlist
+Place how much Youtube IDs/.ogg you want*/
 var l_musicPlaylist = [
-	{ogg: "songs/song1.ogg", name: "OsmanliGamingRP Derlemesi"},
+	{ogg: "songs/song1.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song2.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song3.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song4.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song5.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song6.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song7.ogg", name: "OsmanlıGamingRP Derlemesi"},
+	{ogg: "songs/song8.ogg", name: "OsmanlıGamingRP Derlemesi"},	
+
 ];
 
-/*Musiques dans le désordre ? ( "True" pour Oui / "False" pour Non )*/
+/*Random music order?*/
 var l_musicRandom = true;
 
-/*Volume de la musiqe
-Mettez un nombre entre 0 et 100*/
+/*Music volume
+Choose a value between 0 and 100*/
 var l_musicVolume = 23;
 
-/*Activer les messages personnalisés ? ( "True" pour Oui / "False" pour Non )*/
+/*Enable custom messages?*/
 var l_messagesEnabled = true;
 
-/*Mettez vos messages pérsonnalisés en dessous
-Remplacez le "Message #..." par votre message*/
+/*Enter your custom messages below*/
 var l_messages = [
-"Sayın Oyuncumuz OsmanlıGamingRP Sunucumuza Hoşgeldiniz",
-"Sunucumuzda Argo,Siyaset,Cinselik Konuşmak Yasaktır",
-"Oyunda Gereksiz Mikrofon Basmak Yasaktır.",
-"CiddiRP",
-"Troll Yasaktir Ve Perma Ban",
-"!grup yazarak gurupda ceklislerimizi ogrenin.",
-"!discord yazarak discord adresimize gelin",
-"!workshop yazarak addonlari indiriniz.",
-"Adminleri Gereksiz Meşgul Etmeyin.",
-"İyi Oyunlar",
-"Şikayet ve Adminlik Başvursu için Forum:osmanligamingrp.mistforums.com"
+"OsmanlıGamingRP MilitaryRP Hoşgeldin.",
+"Sunucumuza Girdin İçin Teşekkür Ederiz.",
+"CiddiRP Yapamak Zorundasın.",
+"Trol Yapamak Sınırsız Ban.",
+"Gereksiz Admin Cağırma.",
+"Komutanlara Selam Vermek Zorundasın.",
+"Argo,Siyaset,Cinselik,Reklam,Din,Irkcılık Yapamak Yasaktır.",
+"Gereksiz Mikrofon Basmak Yasaktır.",
+"İyi Oyunlar Dileriz.",
+"Şikayet Ve Öneriniz İçin Forum:osmanligamingrp.mistforums.com"
 ];
 
-/*Messages en désordre ? ( "True" pour Oui / "False" pour Non )*/
-var l_messagesRandom = false;
+/*Random message order?*/
+var l_messagesRandom = true;
 
-/*Delai entre les changements de message ( millisecondes)
-Il est conseillé de mettre la même valeur qu'à "Delai ( millisecondes ) entre les images"*/
-var l_messagesDelay = 3000;
+/*Delay between message changes
+in milliseconds*/
+var l_messagesDelay = 5000;
 
-/*Durée de l'animation de changement d'image ( millisecondes ) */
+/*Messages fade time
+in milliseconds*/
 var l_messagesFade = 1000;
+
+/*
+--------------------------------------
+--------LEAKED BY ANONYMOUS LEAKR --------------
+----------------------------------------
+*/

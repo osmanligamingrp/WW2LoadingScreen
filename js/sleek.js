@@ -1,15 +1,16 @@
 
+//Array randomizer (Fisher-Yates algorithm)
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
 
-
+  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
-
+    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-
+    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -34,21 +35,24 @@ function DownloadingFile( fileName ) {
 	downloadedFiles++;
 	refreshProgress();
 
-	setStatus("Téléchargement des addons, etc...");
+	setStatus("Downloading files...");
 }
 
 function SetStatusChanged( status ) {
-	if (status.indexOf("Téléchargement de L'addon : #") != -1) {
+	if (status.indexOf("Getting Addon #") != -1) {
 		downloadedFiles++;
-		refreshProgress();    // Modifiez le nom de votre serveur :
-	}else if (status == "Envoi des Infos") {
+		refreshProgress();
+	}else if (status == "Sending client info...") {
 		setProgress(100);
 	}
 
 	setStatus(status);
 }
 
-/* NE RIEN MODIFIER APRES CETTE LIGNE-------------------------------------*/
+/* Useless...
+function SetFilesTotal( total ) {
+	console.log("SetFilesTotal("+total+")");
+}*/
 
 function SetFilesNeeded( needed ) {
 	neededFiles = needed + 1;
@@ -194,3 +198,9 @@ function showMessage(message) {
 		showMessage(message+1);
 	}, l_messagesDelay + l_messagesFade*2);
 }
+
+/*
+--------------------------------------
+--------LEAKED BY ANONYMOUS LEAKR --------------
+----------------------------------------
+*/
