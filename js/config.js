@@ -64,11 +64,6 @@ var l_bgImages = [
 	"backgrounds/images/touhou03.jpg",
 	"backgrounds/images/touhou04.jpg",
 	"backgrounds/images/touhou05.jpg",
-	"backgrounds/images/touhou06.jpg",
-	"backgrounds/images/touhou07.jpg",
-	"backgrounds/images/touhou08.jpg",
-	"backgrounds/images/touhou09.jpg",
-	"backgrounds/images/touhou10.jpg",
 ];
 
 /*Random background images order?*/
@@ -124,7 +119,7 @@ var l_messagesEnabled = true;
 
 /*Enter your custom messages below*/
 var l_messages = [
-"OsmanlıGamingRP MilitaryRP Hoşgeldin.",
+"OsmanlıGamingRP StarWarsRP Hoşgeldin.",
 "Sunucumuza Girdin İçin Teşekkür Ederiz.",
 "CiddiRP Yapamak Zorundasın.",
 "Trol Yapamak Sınırsız Ban.",
