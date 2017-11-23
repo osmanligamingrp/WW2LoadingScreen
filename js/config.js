@@ -21,7 +21,7 @@ var l_serverImage = "images/logo.png";
 
 /*Custom server name configuration
 Leave it blank for automatic server name*/
-var l_serverName = "sleekLoad 2";
+var l_serverName = "OsmanlıGaming";
 
 /*Use a video for the background?
 Otherwise it will just use images*/
@@ -96,14 +96,8 @@ var l_musicDisplay = true;
 /*Music playlist
 Place how much Youtube IDs/.ogg you want*/
 var l_musicPlaylist = [
-	{ogg: "songs/song1.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song2.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song3.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song4.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song5.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song6.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song7.ogg", name: "OsmanlıGamingRP Derlemesi"},
-	{ogg: "songs/song8.ogg", name: "OsmanlıGamingRP Derlemesi"},	
+	{ogg: "none", name: "OsmanlıGamingRP Derlemesi"},
+
 
 ];
 
