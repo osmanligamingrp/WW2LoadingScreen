@@ -1,61 +1,81 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="tr" >
 <head>
-	<meta charset="utf-8">
-	<title>sleekLoad 2</title>
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/sleek.css">
+  <meta charset="UTF-8">
+  <title>Osmanlı Gaming Loading</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/osmanli.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+  
 </head>
+
 <body>
 
 
-<video id="myVideo" sytle="display: none; width="%100" height="%100" autoplay>
-  <source src="video.mp4" type="video/mp4">
-</video>
 
-<script>
-var vid = document.getElementById("myVideo");
-vid.onended = function() {
-   document.getElementById("myVideo").style.display = "none";
-   document.getElementById("hud").style.display = 'block';
+<div>
+          <div id="slideshow">
+            <img src="img/1.jpg">
+            <img src="img/2.jpg">
+            <img src="img/3.jpg">
+            <img src="img/4.jpg">
+            <img src="img/5.jpg">
+            <img src="img/6.jpg">
+            <img src="img/7.jpg">
+            <img src="img/8.jpg">
+            <img src="img/9.jpg">
+          </div>
+          <div class="w3-display-bottomleft song">
+          <div class="w3-panel w3-dark-grey w3-text-white w3-round">
+            Merhaba !<br>
+Osmanlı Gaming sunucusuna hoş geldin. Sana biraz sunucu hakkında bilgi verelim <br>şu anda <span id="mapName" class="w3-text-red" style="font-weight: bold;">unknown</span> mapinde oynuyoruz.
+          </div>
+          </div>
+</div>
+
+  
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/slideshow.js"></script>
 
 
 
+<script type="text/javascript">
+var numberOfSongs = 2
+var sound = new Array(numberOfSongs+1)
+sound[0]= "song/song1.mp3"
+sound[1]= "song/song2.mp3"
+function randomNumber(){
+var randomLooper = -1
+while (randomLooper < 0 || randomLooper > numberOfSongs || isNaN(randomLooper)){ randomLooper = parseInt(Math.random()*(numberOfSongs+1))
+}
+return randomLooper
+}
+var randomsub = randomNumber()
+var soundFile = sound[randomsub]
+document.write ('<audio id="ms" src= "' + soundFile + '" autoplay loop>')
+var mus = document.getElementById("ms");
+mus.volume = 0.3;
 
-};
-vid.onplay = function () {
-	document.getElementById("hud").style.display = 'none';
-	document.getElementById("myVideo").style.display = "block";
-
-
-};
 </script>
+<script>
 
+function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode )
+{
+$("#mapName").text(mapname);
+$("#gameMode").text(gamemode);
+$("#maxPlayers").text(maxplayers);
+}
+</script>
+    
 
-<div id="hud" sytle="display: none;">
-	<div id="player"></div>
-	<div id="overlay"></div>
-
-	<div id="title">sleekLoad 2</div>
-
-	<div id="status-container">
-		<div id="status">Server Bilgileri Alınıyor...</div>
-		<div id="loading">
-			<div id="loading-progress"></div>
-		</div>
-		<div id="messages"></div>
-	</div>
-
-
-	</div>
-
-
-
-	<script src="js/lib/jquery-2.1.1.min.js"></script>
-	<script src="js/lib/jquery.backstretch.min.js"></script>
-	<script src="js/config.js"></script>
-	<script src="js/sleek.js"></script>
 
 </body>
 </html>
