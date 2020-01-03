@@ -1,81 +1,126 @@
 <!DOCTYPE html>
-<html lang="tr" >
+
 <head>
-  <meta charset="UTF-8">
-  <title>Osmanlı Gaming Loading</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/osmanli.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Osmanli Gaming Loading Screen">
+	<meta name="author" content="Osmanli Gaming">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+	<link href="stylev3.css" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript">
+			$(function()
+				{
+					$("#slides").cycle({
+					after:     function() {
+					$('#caption').html(this.alt);
+				}
 
-
-
-  
+				});
+			});
+		</script>
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+	<style>
+		body {
+    		font-family: 'Muli';
+			}
+	</style>
+		
+		
+		
 </head>
 
 <body>
 
+<div id="slideswrapper">
 
+		<div id="slides">
 
-<div>
-          <div id="slideshow">
-            <img src="img/1.jpg">
-            <img src="img/2.jpg">
-            <img src="img/3.jpg">
-            <img src="img/4.jpg">
-            <img src="img/5.jpg">
-            <img src="img/6.jpg">
-            <img src="img/7.jpg">
-            <img src="img/8.jpg">
-            <img src="img/9.jpg">
-          </div>
-          <div class="w3-display-bottomleft song">
-          <div class="w3-panel w3-dark-grey w3-text-white w3-round">
-            Merhaba !<br>
-Osmanlı Gaming sunucusuna hoş geldin. Sana biraz sunucu hakkında bilgi verelim <br>şu anda <span id="mapName" class="w3-text-red" style="font-weight: bold;">unknown</span> mapinde oynuyoruz.
-          </div>
-          </div>
+			<div id="bg1"><div class="slogan">
+
+				<h1>Osmanli Network RP</h1>
+
+				
+			
+			    </p><p></p></div></div>
+			
+			    <div id="bg2"><div class="slogan">
+
+			    <h1>Osmanli Network RP</h1>
+
+			 
+
+			    <p></p></div></div>
+
+			    <div id="bg3"><div class="slogan">
+
+			    <h1>Osmanli Network RP</h1>
+
+			    </div></div>
+
+			    <div id="bg4"><div class="slogan">
+
+			    <h1>Osmanli Network RP</h1>
+                </div></div>
+			
+			</div>
+	</div>
+</div>	
+
+    
+<div id="patience">
+		<section id="media"></section>
+		Özel eklentilerin yüklenmesi 10-15 dakika arası sürebilir. Bu sürede neden kendine bir kahve yapmıyorsun? Kahveni yudumlarken istersen sol taraftaki bilgilere göz atarak oyun hakkındaki bilgilerini pekiştirebilirsin! 
+		Şimdiden iyi zaman geçirmen dileğiyle!
 </div>
+		
+<div id="footer">2020 © Osmanli Network RP - Sunucu Mod Tasarımcılarımız,Eray,Kerem'dir yaptığınız modlar için teşşekür ederiz.</div>
+
 
   
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script  src="js/slideshow.js"></script>
-
-
-
-<script type="text/javascript">
-var numberOfSongs = 2
-var sound = new Array(numberOfSongs+1)
-sound[0]= "song/song1.mp3"
-sound[1]= "song/song2.mp3"
-function randomNumber(){
-var randomLooper = -1
-while (randomLooper < 0 || randomLooper > numberOfSongs || isNaN(randomLooper)){ randomLooper = parseInt(Math.random()*(numberOfSongs+1))
-}
-return randomLooper
-}
-var randomsub = randomNumber()
-var soundFile = sound[randomsub]
-document.write ('<audio id="ms" src= "' + soundFile + '" autoplay loop>')
-var mus = document.getElementById("ms");
-mus.volume = 0.3;
-
-</script>
 <script>
-
-function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode )
-{
-$("#mapName").text(mapname);
-$("#gameMode").text(gamemode);
-$("#maxPlayers").text(maxplayers);
-}
-</script>
-    
-
+var audio = document.createElement('audio');
+var source = document.createElement('source');
+var media = document.getElementById('media');
+media.appendChild(audio);
+audio.appendChild(source);
+source.setAttribute('src', 'music.ogg');
+source.setAttribute('type', 'audio/ogg');
+audio.setAttribute('autoplay', 'autoplay');
+</script> 
 
 </body>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('audio').prop('volume', 0.25);
+		$(window).resize(function()
+		{
+		$('.center').css(
+		{
+			position: 'absolute'
+		});
+		$('.center').css(
+		{
+			left: ($(window).width() - $('.center').outerWidth()) / 2,
+			top: ($(window).height() - $('.center').outerHeight()) / 2
+		});
+		});
+		$(window).resize();
+    });
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130580485-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130580485-1');
+</script>
+
+
 </html>
