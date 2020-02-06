@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+		<link href="stylev3.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			$(function()
+				{
+					$("#slides").cycle({
+					after:     function() {
+					$('#caption').html(this.alt);
+				}
+
+				});
+			});
+			
+			$(function()
+				{
+					$("#slides").cycle({
+					after:     function() {
+					$('#caption').html(this.alt);
+				}
+
+				});
+			});
+			
+			$(document).ready(function() 
+			{
+				var sayi =Math.floor(Math.random()*3)+1;
+		
+				var sqrRX ="<embed src='enindex.php_dosyalar/player.swf' id='radioplayer' name='radioplayer' quality='medium' allowscriptaccess='always' type='application/x-shockwave-flash' flashvars='file=enindex.php_dosyalar/song"+sayi+".mp3&amp;volume=75&amp;start=0&amp;duration=0&amp;autostart=true&amp;controlbar=none&amp;dock=false&amp;icons=false' height='1' width='1'>";
+				//alert(sqrRX);
+				//document.getElementById('TheRX').innerHTML(sqrRX);
+				//$('#TheRX').innerHTML=sqrRX;
+				$('#TheRX').append(sqrRX);
+				
+			
+			});
+			
+		
+		</script>
+		
+		
+		
+		
+	</head>
+<body>
+
+<div id="slideswrapper">
+
+		<div id="slides">
+
+			<div id="bg1"><div class="slogan">
+
+				<h1>Hakımızda</h1>
+
+				
+			
+			    </p><p>Kâr amacı gütmeyen bir eğlence sunucusuyuz. Hoşgörümüz ve kalitemiz insanlara bizi sevdirdi. Eskiden 32 olan slot sayısını artık 52'ye çıkardık. Osmanlı Gaming olarak hepinize teşekkür ederiz. Sizi eğlendirmek için elimizden geleni yapıyoruz, yapacağız.</p></div></div>
+			
+			    <div id="bg2"><div class="slogan">
+
+			    <h1>Misyon</h1>
+
+			 
+
+			    <p></p>Garry's Mod sektöründe Türkiye`nin bir numaralı oyunu sunucusu olmaktır. Hizmet ve kalite ile en iyi sunucu olmaya çalışıyoruz. Özetle, hedefimiz: Türk oyunculara rolü ve rol yapmayı sevdirmektir.</div></div>
+
+			    <div id="bg3"><div class="slogan">
+
+			    <h1>Vizyon</h1>
+
+			    <p></p>Faaliyette bulunduğumuz oyunlarda; Bireye ve topluma saygılı, ve ahlakî ilkelere bağlı kalarak Türk oyunculara rolü sevdirmektir. Oyuncularımızın beklentilerini en üst seviyede karşılamak için çalışmaktır.</div></div>
+
+			    <div id="bg4"><div class="slogan">
+
+			   
+			   <h1>Değerlerimiz</h1>
+
+			    <p></p>Oyuncu odaklı, takım çalışmasına inanan, dürüst ve şeffaf, çalışanlarını sürekli geliştiren, yenilikçi, çevre ve topluma duyarlı,yaratıcı, dinamik..</div></div>
+
+			    <div id="bg5"><div class="slogan">
+			    
+			    
+				<h1>Metro 2033 Nedir ?</h1>
+
+			    <p></p>Rus yazar Dmitry Glukhovsky’nin aynı adlı romanından uyarlanan hikayemiz, nükleer felaketten 20 yıl sonraki dönemde, Moskova’da geçiyor. İnsanlar bu olayın ardından metro sistemine kaçmışlar ve uzun bir süredir de burayı evleri bellemiş durumdalar. Her bir metro istasyonu küçük bir şehir halini almış. Kontrol ettiğimiz karakterimiz genç Artyom ise yaşadığı “şehir”de beliren tehlikeleri diğer istasyon-şehir’e iletmek için yola çıkıyor. Tabi ki bu yolculuğunda mutantlar, yaratıklar ve haydutlarla karşılaşmakla da kalmıyor Artyom. Neo-komünistler ve Neo-Naziler, bunların yanında “Dark Ones” adı verilen ve insanlara neden saldırdıkları belli olmayan bir grup yaratık da karşılacaklarımız arasında.</div></div>
+
+			    <div id="bg6"><div class="slogan">
+				
+</div>
+</div>	
+
+<div id="patience">
+		
+		Özel eklentilerin yüklenmesi 10-15 dakika arası sürebilir. Bu sürede neden kendine bir kahve yapmıyorsun? Kahveni yudumlarken istersen sol taraftaki bilgilere göz atarak oyun hakkındaki bilgilerini pekiştirebilirsin! 
+		Şimdiden iyi zaman geçirmen dileğiyle!
+</div>
+        
+        
+		
+<div id="footer">2020 © Osmanli Network RP</div>
+
+
+<div id="TheRX"></div>
+</body>
+
+
+</body>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/loading.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('audio').prop('volume', 0.25);
+		$(window).resize(function()
+		{
+		$('.center').css(
+		{
+			position: 'absolute'
+		});
+		$('.center').css(
+		{
+			left: ($(window).width() - $('.center').outerWidth()) / 2,
+			top: ($(window).height() - $('.center').outerHeight()) / 2
+		});
+		});
+		$(window).resize();
+    });
+	</script>
+
+</html>

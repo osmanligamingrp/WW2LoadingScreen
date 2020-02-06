@@ -1,0 +1,101 @@
+
+html,body{
+    margin: 0 !important;
+    padding: 0 !important;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	background-color: black;
+	color: #1b1b1b;
+	font-size: 10pt;
+	overflow:hidden;
+	width: 100%;
+	text-shadow: 2px 2px 2px #000;
+}
+
+@font-face { font-family: Roboto Regular;} 
+
+#logo{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 600px;
+	height: 800px;
+	z-index: 10;
+	padding-left: 10px;
+}
+
+/* Box containing text */
+.slogan{
+	margin-left: 100px;
+	margin-top: 220px;
+	color: white;
+	width: 450px;
+}
+
+/* Header text for each paragraph */
+h1{
+	font-size: 40pt;
+	font-family: Roboto Regular;
+	color: white;
+}
+
+/* Slideshow */
+#slides {
+	position: relative;
+    width: 1920px;
+    height: 1080px;  
+	overflow: hidden; 
+	
+}
+
+#slideswrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	position: relative;
+}
+
+#bg1{ width: 1920px;  height: 1080px; background: url(images/bg1.jpg) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#bg2{ width: 1920px;  height: 1080px; background: url(images/bg2.jpg) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#bg3{ width: 1920px;  height: 1080px; background: url(images/bg3.jpg) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#bg4{ width: 1920px;  height: 1080px; background: url(images/bg4.jpg) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#bg5{ width: 1920px;  height: 1080px; background: url(images/bg5.jpg) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+#footer {
+	height: 50px;
+	position: absolute;
+	left: 100px; 
+	bottom: 10px;
+	text-align: left;
+	font-size: 6t; 
+	color: #969696;
+	width: 100%;
+	z-index: 10;
+	padding-left: 10px;
+}
+
+#patience{
+	height: 90px;
+	position: absolute;
+	right: 10px; 
+	padding: 10px;
+	bottom: 90px;
+	border: 1px solid #232323;
+	font-size: 6t; 
+	color: #bfbfbf;
+	background-color: #2C3F50;
+	width: 378px;
+	z-index: 11;
+	text-shadow: 0px 0px 0px #000;
+}
+
+#servers{
+	width: 385px;
+	height: 500px;
+	position: absolute;
+	right: 10px;
+	z-index: 9;	
+	top: 100px;
+	color: white;
+}
